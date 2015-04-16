@@ -1,0 +1,162 @@
+html, body {
+	min-width: 100%;
+	background: whitesmoke;
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body > div{
+	box-sizing: border-box;
+}
+
+.topbar {
+	width: 100%;
+	height: 6em;
+	background: #00838F;
+}
+
+.topbar div{
+	display: inline-block;
+	color: rgba(253, 253, 253, 1);
+	vertical-align: top;
+}
+
+.fa {
+	width: 21.5%;
+	/*font-size: 1em !important;*/
+	padding: .5em 0px 0px .3em;
+	position: absolute;
+}
+
+.back {
+	font-size: .5em;
+	margin: .56em .15em;
+	font-family: Helvetica, Arial, sans-serif !important;
+}
+
+/*media query to hide the back button text*/
+@media all and (max-width: 600px){
+	.back{
+		visibility: hidden !important;
+	}
+}
+
+.left {
+	width: 24%;
+}
+
+.sharp {
+	padding: .3em 0em;
+	text-align: center;
+	font-size: 2em;
+	width: 100%;
+}
+
+.sub {
+	font-size: 14px;
+	display: list-item;
+	padding: 0em 4em;
+
+}
+
+.right {
+	width: 23%;
+}
+
+
+
+.title {
+	background: rgba(253, 253, 253, 1);
+	color: gray;
+	width: 100%;
+	height: 2em;
+	text-align: center;
+	font-size: 1.5em;
+	padding: .5em 0em;
+	box-shadow: 0px 0px 20px #888888;
+
+}
+
+.wrap {
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	padding: 1em 0;
+}
+.lead-in {
+	margin: 0 auto;
+	color: gray;
+	width: 85%;
+}
+
+.button {
+		display: inline-block;
+		margin: 1em auto;
+		background: rgba(250, 250, 250, 1);
+		padding: 1em;
+		text-align: left;
+		color: gray;
+		display: block;
+		width: 80%;
+		border: 0;
+		outline: 0;
+		cursor: pointer;
+		text-decoration: none;
+		min-height: 2em;
+		box-shadow: 0px 3px 10px #BDBDBD;
+		transition: background-color 0.5s ease;
+}
+/*@media (max-width: 600px){
+.button:focus,
+.slider:focus {
+	background: rgba(255, 255, 255, 1);
+	color: #00838F;
+	}
+}*/
+
+
+.button.is-active,
+.slider.is-active {
+	background: rgba(255, 255, 255, 1);
+	color: #00838F;
+	box-shadow: 0px 3px 25px #BDBDBD;
+	border-radius: 0px !important;
+}
+
+@media (min-width: 1024px){
+.button:hover,
+.slider:hover {
+	background: rgba(255, 255, 255, 1);
+	color: #00838F;
+	}
+}
+
+.slider {
+  border-radius: 0.3em;
+  display: inline-block;
+  margin: 1em auto;
+  background: rgba(255, 255, 255, 1);
+  padding: 1em;
+  text-align: left;
+  color: gray;
+  display: block;
+  width: 80%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  min-height: 2em;
+  /* box-shadow: 0px 0px 3px #BDBDBD; */
+}
+
+
+
+.slider-content {
+	visibility: hidden;
+	display: none;
+	padding: .5em 0em 0em 0em;
+}
+
+.slider.is-active .slider-content {
+	visibility: visible;
+	display: block;
+}
